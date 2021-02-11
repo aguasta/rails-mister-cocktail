@@ -1,0 +1,18 @@
+<div class="bigcontainer">
+<h1 class="container">New Cocktail </h1>
+
+
+<div class="container">
+<%= simple_form_for(@cocktail) do |f|  %>
+    <%= f.input :name  %> <br>
+     <%= f.submit  %>
+<% end %>
+</div>
+
+
+<br>
+<h4 class="container">
+<a href="/cocktails">Back to all Cocktails</a>
+</h4>
+</div>
+

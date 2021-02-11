@@ -1,0 +1,21 @@
+<div class="bigcontainer">
+<div class="container">
+
+<h1>All Cocktails 🍹🍸 </h1>
+</div>
+
+<div class="container">
+
+<ul class="anchor">
+<% @cocktails.each do |cocktail| %>
+<h3 class="anchor">  <%= link_to(cocktail.name.capitalize, cocktail_path(cocktail))  %></h3>
+<% end %>
+</ul>
+
+</div>
+
+<h4 class="container">
+<a href="/cocktails/new">+ Create new cocktail</a>
+</h4>
+
+</div>
